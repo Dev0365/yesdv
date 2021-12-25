@@ -1,8 +1,6 @@
 pipeline () {
    agent any 
  stages {
-      stage ('clear') {
-          steps {
    stage('docker image'){
     steps{
    sh "docker build -t kar_image . "
