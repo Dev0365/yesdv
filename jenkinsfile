@@ -8,7 +8,7 @@ pipeline () {
    }
    stage('docker run'){
       steps{
-          "docker run -d --name k1 -p 5000:80 kar_image /bin/bash"
+     sh "docker run -d --name k1 -p 5000:80 kar_image /bin/bash"
       }
       }
       
