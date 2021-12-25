@@ -3,14 +3,6 @@ pipeline () {
  stages {
       stage ('clear') {
           steps {
-          sh 
-           '''
-              "docker rm -f k1 "
-              "docke rmi kar_image "
-              '''
-              }
-              }
-              
    stage('docker image'){
     steps{
    sh "docker build -t kar_image . "
